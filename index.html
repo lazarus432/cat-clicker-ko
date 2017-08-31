@@ -7,12 +7,12 @@
 
 <body>
   <div class = "container">
-    <h1 class = "cat-name" data-bind = "text: name"></h1>
-    LEVEL:<h2 class = "cat-level" data-bind = "text: level"></h2>
-    CLICK COUNT:<h2 class = "click-count" data-bind = "text: clickCount"></h2>
-    <img class = "cat-image" src = "" alt = "cat" data-bind = "click: incrementCounter, attr: {src: imgSrc}">
+    <h1 class = "cat-name" data-bind = "text: currentCat().name"></h1>
+    LEVEL:<h2 class = "cat-level" data-bind = "text: currentCat().level"></h2>
+    CLICK COUNT:<h2 class = "click-count" data-bind = "text: currentCat().clickCount"></h2>
+    <img class = "cat-image" src = "" alt = "cat" data-bind = "click: incrementCounter, attr: {src: currentCat().imgSrc}">
     <h4>Nicknames</h4>
-    <ul data-bind = "foreach: cats">
+    <ul data-bind = "foreach: currentCat().nicknames">
       <li data-bind = "text: name"></li>
 
   </div>
