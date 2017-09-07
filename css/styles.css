@@ -1,1 +1,46 @@
+.container {
+  height: 100%;
+  position: relative;
+}
 
+.container-top {
+  position: relative;
+  -webkit-padding-start: 0;
+  text-align: center;
+  -webkit-margin-before: 3em;
+}
+
+.container-body {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.cat-name {
+  width: 56%;
+  text-align: center;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+.cat-level {
+  width: 8%;
+}
+
+.cat-image {
+  position: absolute;
+  margin-top: 5em;
+  right: 30em;
+}
+
+.text-click {
+  width: 78%;
+  position: absolute;
+  text-align: right;
+}
+
+.click-count {
+  width: 80%;
+  position: absolute;
+  text-align: right;
+}

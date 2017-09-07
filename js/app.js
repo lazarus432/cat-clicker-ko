@@ -45,19 +45,26 @@ var Cat = function(data) {
     var clicks = self.clickCount();
     var level = self.level();
     if (clicks < 10) {
-      level = "Baby G";
+      level = "Preschooler";
       return level;
     }
     if (clicks < 20) {
-      level = "Young G";
+      level = "Kindergartner";
       return level;
     }
     if (clicks < 30) {
-      level = "Real G";
+      level = "Middle Schooler";
       return level;
     }
     if (clicks < 40) {
-      level = "OG";
+      level = "High Schooler";
+      return level;
+    }
+    if (clicks < 50) {
+      level = "Professor";
+      return level;
+    } else {
+      level = "Doctor";
       return level;
     }
   });
